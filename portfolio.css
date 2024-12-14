@@ -1,0 +1,690 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 8px;
+   
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(yellow,green);
+    border-radius: 14px;
+}
+body{
+    background: #080808;
+    color: #fff;
+    position: relative;
+}
+b{
+    color: white;
+    padding-right: 1rem;
+    font-weight: 900;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/me-remo.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+
+    /* padding: top right bottom left; formular akantu kubuenge*/
+    padding: 0 1rem 0 1rem;
+
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: space-between; */
+    
+}
+
+nav{
+     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: fading-in;
+    animation-duration: 2s;
+    }
+    @keyframes fading-in {
+        0%{
+            opacity: 0;
+            transform: translateY(-30px);
+    
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px) ;
+            
+        }
+    
+    
+    }
+.logo{
+    img{
+        width: 10rem;
+    }
+
+    h2{
+        span{
+            color: red;
+/* &nbsp;  For Additional space */
+        }
+    }
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 25px ;
+    
+    
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    
+}
+nav ul li a::after {
+    content: '';
+    width:0;
+    height: 3px;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s; /* Smooth transition */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expands the underline */
+}
+.homeBtn{
+    color: rgb(0, 0, 0);
+    background: #44fd33;
+    padding: 10px;
+    border-radius: 7px;
+    font-weight: 760;
+}
+.homeBtn:hover::after{
+    width: 0;
+
+}
+.hireBtn:hover::after{
+    width: 0;
+
+   }
+/* .hire-me{
+
+    .btn3{
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        border-radius: 8px;
+        background: chartreuse;
+        transition: all .5s ease;
+        
+    }
+    .btn3:hover{
+        background: linear-gradient(to right,black,pink);
+        color: aqua;
+    }
+    a{
+        text-decoration: none;
+    }
+} */
+.hero{
+
+    display: flex;
+    height: auto;
+    /* background: red; */
+
+    .desc{
+
+        background: transparent;
+        /* width: 50%; */
+        /* height: 35rem; */
+        padding-top: 8rem;
+        margin-left: 3rem;
+
+        p{
+
+            font-size: 3em;
+            font-weight: 700;
+
+            span{
+                color: red;
+            }
+        }
+    }
+}
+.mynames::before {
+    content: ""; /* Default content */
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    font-weight: 800;
+
+    animation: changename 5s steps(1) infinite;
+}
+
+/* Cursor blinking animation */
+.mynames::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    
+}
+
+/* Define keyframes to change text content */
+@keyframes changename{
+    0% {
+        content: "SEMANA"; 
+    }
+    
+    40% {
+        content: "SHEMA";
+    }
+    90% {
+        content: "Parfait";
+    }
+}
+
+
+/* ------------whatsappp------------- */
+.whataspp{
+    /* float: left;     akantu kubwenge wllh */
+    margin-top: 33rem;
+    width: 50%;
+    position: fixed; 
+    padding-left: 1.5rem;
+    border-radius: 50%;
+    z-index: 100;
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    i{
+        color: white;
+        font-weight: 900;
+        font-size: 2em;
+        
+    }
+
+}
+.whataspp .tsap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    border-radius: 50%;
+    outline: none;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    
+    
+    /* margin-top: 20rem; */
+    
+}
+/* ---------------aboutsection--------------- */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 3rem;
+    font-weight: 700;
+    span{
+        color: chartreuse;
+    }
+}
+        
+    .tab-title{
+    
+        /* position: relative; */
+        display: flex;
+        margin: 20px 0 40px;
+        color: #ffffff;
+        gap: 30px;
+             }
+    .tab-links{
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    } 
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: chartreuse;
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+
+    }                                                  
+    .tab-links.active-link::after{
+        width: 50%;
+
+    }
+    .tab-contents ul li{
+        list-style: none;
+        margin: 10px 0;
+    }
+    .tab-contents ul li span{
+        color: chartreuse;
+        font-size: 18px;
+    }
+    .tab-contents{
+        display: none;
+    }
+    .tab-contents.active-tab{
+        display: block;
+
+    }
+/* -----------------my services------------- */
+#service{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top:50px ;
+    animation-name: fading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    border-right: 10px;
+    border-radius: 8px;
+    transition: bacground 0.5s, transform 0.5s;/*  akantu kubwenge */
+}
+.services-list div i{
+    font-size: 4rem;
+    margin-bottom: 30px;
+
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: rgba(128, 255, 0, 0.571);
+    color: black;
+    font-weight: 700;
+    transform: translateY(-20px);
+    
+}
+@keyframes fading {
+    0%{
+        opacity: 0;
+        transform: translateY(60px) ;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) ;
+       
+        
+    }
+
+
+}
+/* ------------my portfolio---------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),chartreuse);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: chartreuse;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background:#fff ;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.2); /*  make div big */
+}
+.work:hover .layer{
+     height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;  /* akantu kubwenge */
+    border: 1px solid chartreuse;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background .8s; /*  akantu kubwenge */
+}
+.btn:hover{
+    background: chartreuse;
+}
+/* ---------------contact form-------------- */
+.contact-left{
+    flex-basis: 35% ;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: chartreuse;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform  0.5s;
+}
+.social-icons a:hover{
+    color: chartreuse;
+    transform: translateY(-20px);
+}
+.btn.btn2{
+  display: inline-block;
+  background:chartreuse ;
+}
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-instagram{
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #F77737);
+    background-clip: text;
+    color: transparent;
+
+}
+.fa-square-whatsapp{
+    background-color: #25D366;
+    background-clip: text;
+    color: transparent;
+/* color: white; */
+
+}
+.fa-square-x-twitter{
+    background-color: #1DA1F2;
+    background-clip: text;
+     color: transparent;
+
+}
+.fa-linkedin{
+    background-color: #0A66C2;
+    background-clip: text;
+    color: transparent;
+
+}
+
+
+/* ------contact right--------- */
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: none;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size :18px;
+    margin-top: 20px;
+    cursor: progress;
+
+
+}
+/* ----------footer-------- */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 400;
+    margin-top: 25px;
+
+}
+
+/* --------------------popup------------------ */
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translate(-50px ,-50px) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.5s, top 0.5s;
+}
+.open-popup{
+    visibility: visible;
+    top: 180rem;
+    transform: translate(-50px ,-50px) scale(1);
+
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 20px 5px rgba(0, 0,0, 0.2);
+
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0,0, 0.2);
+}
+nav .fa-regular.fa-circle-xmark{
+    display: none;
+}
+nav .fa-solid.fa-bars{
+    display: none;
+    position: relative;
+}
+.btn.btn3{
+    color: black;
+    font-weight: 800;
+    background: #25D366;
+}
+/* ------------responsive----------- */
+@media only screen and (max-width: 650px){
+  
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+        
+    }
+    .header-text h1{
+        font-size:30px ;
+    }
+    nav .fa-regular.fa-circle-xmark{
+        display: block;
+        font-size: 30px;
+    }
+    nav .fa-solid.fa-bars{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background-color: #004d00;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+        
+    }
+    .btn.btn3{
+        display: block;
+        background-color: #00b300; /* Bright green background */
+        color: white;
+       
+    }
+    nav ul .fa-regular.fa-circle-xmark{
+        position: absolute;
+        top: 25px;
+         left: 25px;
+    }
+    nav ul .fa-solid.fa-bars{
+        position: absolute;
+        top: 25px;
+         left: 25px; 
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right {
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+        /* width: 100%; */
+        flex-basis: 100%;
+    }
+    .services-list{
+        width: 85%;
+        margin: 15px;
+    }
+   
+}

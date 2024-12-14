@@ -1,0 +1,164 @@
+/* Base Styles */
+body {
+    background-color: #ede7f6;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: block; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    /* overflow: scroll; */
+}
+span{
+    color: red;
+}
+
+.allform {
+    max-width: 600px;
+    margin: 20px 20rem;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.required {
+    font-size: 13px;
+    color: red;
+}
+
+.title {
+    text-align: center;
+    background-color: #fdfefe;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 8px solid #6703c4;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.name-1, .email-1, .phone-1, .project-1, .detail-1, .design-1, .design-2, .timeline-1, .deadline-1, .timeline-nochange, .payment-1, .payment-2, .information-1, .meeting-1 {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #fdfefe;
+    border-radius: 8px;
+    span{
+        color: red;
+    }
+}
+
+.name, .email, .tel-1, .project, .detail, .design, .timeline, .deadline, .timeline-change, .payment, .pay, .information, .meeting {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="tel"], input[type="date"], .slider {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, input[type="date"]:focus {
+    border-color: #42f49e;
+}
+
+/* Slider and Budget Display */
+.slider {
+    width: 100%;
+}
+
+#value {
+    color: red;
+    font-weight: 800;
+}
+
+.dollar {
+    color: #15ae92;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.first, .second {
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.second {
+    padding-left: 5rem;
+}
+
+/* Button Styling */
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #6703c4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #15ae92;
+}
+
+.copyright{
+    background: #2e3030;
+    color: #ffffff;
+    /* position: absolute; */
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 1rem;
+    p{
+        color: white;
+        position: absolute;
+        right: 30rem;
+        align-content: center;
+        /* padding: 20px 25rem; */
+    }
+    span{
+        color: rgb(15, 15, 228);
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 650px){
+    body{
+       
+    }
+    .allform {
+        width: 25rem;
+        padding: 20px;
+        margin: 0;
+        padding: 0;
+         }
+}
+@media only screen and (max-width: 375px){
+    .allform{
+        margin: 0;
+        padding: 0;
+        width: 5rem;
+    }
+    form{
+        margin: 0;
+        padding: 0;
+        /* width: rem; */
+
+    }
+
+}

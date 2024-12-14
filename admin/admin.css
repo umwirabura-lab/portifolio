@@ -1,0 +1,90 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #222;
+    color: #fff;
+    width: 15rem;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+   
+  }
+ 
+  li{
+    font-weight: 660;
+   
+  }
+
+  .sidebar h1 {
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-underline-offset: 0.7rem;
+    text-decoration-thickness: 0.3rem;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .sidebar nav ul li a i {
+    margin-right: 10px;
+    /* color: red; */
+  }
+  .sidebar nav ul li a:hover{
+    color: aquamarine;
+  }
+  /* ----------home ----------- */
+  .home-section {
+    margin-left: 17rem;
+    padding: 20px;
+    width: calc(100% - 15rem);
+    h1{
+        color: yellowgreen;
+        margin-left: 6rem;
+    }
+  }
+  .dashboard-cards {
+    display: flex;
+    gap: 90px;
+  }
+  
+  .card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  

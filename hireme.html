@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hire me</menu></title>
+    <link rel="stylesheet" href="hireme.css">
+</head>
+<body>
+    <form action="hireme.php" method="POST">
+    <div class="allform">
+        <div class="title">
+        <h1>SEMANA SHEMA Parfait hiring form</h1>
+            <p>Thank for trusting in me please let me know how we can do good thing with me!</p>
+            <p class="required"><span>*required</span></p>
+        </div>
+
+        <div class="name-1">
+            <div class="name"><span>*</span>Please enter your full name</div><br>
+            <div class="input-1"><input type="text" name="name" placeholder="your answer" class="input-1" ></div>
+        </div>
+
+        <div class="email-1">
+            <div class="email"><span>*</span>enter your email</div><br>
+            <div class="input-2"><input type="email" name="email" placeholder="your answer" required class="input-2"></div>
+        </div>
+
+    <div class="phone-1">
+        <div class="tel-1"><span>*</span>enter your phone number (Start with country code e.g +250)</div><br>
+        <div class="input-3"><input type="tel" name="phone" placeholder="your answer" required class="input-3"></div>
+    </div>
+
+    <div class="project-1">
+        <div class="project"><span>*</span>your project title</div><br>
+        <div class="input-4"><input type="text" name="project" placeholder="your answer"  required></div>
+    </div>
+
+    <div class="detail-1">
+        <div class="detail"><span>*</span>your project description</div><br>
+        <div class="input-5"><input type="text" name="detail" placeholder="your answer in few words" required class="input-5"></div>
+    </div>
+    <div class="design-1">
+        <div class="design"><span>*</span>Do you have a design or wireframe ready?</div><br>
+        <div class="input-6"><input type="radio" checked name="no" id="yes" value="yes">
+        <label for="">Yes</label></div>
+        <div class="input-6"><input type="radio" checked name="no" id="no" value="No" >
+            <label for="">No</label></div>
+    </div>
+    <div class="design-2">
+        <div class="design-3"><span>*</span>If no provide for me the link of website you want it may look like?</div><br>
+        <div class="input-7"><input type="text" name="link" placeholder="your answer" required class="input-7"></div><br>
+    </div>
+    <div class="timeline-1">
+        <div class="timeline"><span>*</span>When would you like the project to start? </div><br>
+        <div class="input-8"><input type="date" required name="start"></div><br>
+    </div>
+    <div class="deadline-1">
+        <div class="deadline"><span>*</span>Estimated Project Deadline</div><br>
+        <div class="input-9"><input type="date" required name="end"></div><br>
+    </div>
+
+    <div class="timeline-nochange">
+        <div class="timeline-change"><span>*</span>Is this timeline flexible?</div><br>
+        <div class="input-10"><input type="radio" checked name="maybe" value="fyes" >yes</div>
+        <div class="input-10"><input type="radio" checked name="maybe" value="fno">No</div>
+        <div class="input-10"><input type="radio" checked name="maybe" value="fmaybe">Maybe</div>
+    </div>
+    <div class="payment-1">
+        <div class="payment"><span>*</span>What is your budget for this project?</div>
+        <div class="input-11"><input type="range" required min="100" max="5000" id="myrange" class="slider" value="1" name="budget"></div>
+        <p class="first">100$</p>
+        <p class="second">5000$</p>
+        <p>Value: <span id="value"></span> <span class="dollar">$</span></p>
+    </div>
+    <div class="payment-2">
+        <div class="pay"><span>*</span>Preferred Payment Method?</div>
+        <div class="input-12"><input type="radio" checked name="MTN" value="MTN" >MTN</div>
+        <div class="input-12"><input type="radio" checked name="MTN" value="Airtel" >AIRTEL</div>
+        <div class="input-12"><input type="radio" checked name="MTN" value="Bank Transfer" >Bank-Transfer</div>
+    </div>
+
+  
+    <div class="information-1">
+        <div class="information"><span>*</span>Do you have any additional information or specific requests? </div><br>
+        <div class="input-13"><input type="text" required name="info" placeholder="your answer" class="input-13"></div>
+    </div>
+    <div class="meeting-1">
+
+    <div class="meeting"><span>*</span>When can we schedule a meeting to discuss your project? </div><br>
+    <div class="input-14"><input type="date" required name="meet"></div>
+</div>
+<div class="btn">
+     <button type="submit" class="submit"  name="sbt">submit</button>
+    </div>
+    <div class="last">
+        <p class="never">never submit password in google form<span>!!</span></p>
+        <p class="terms">good contet</p>
+        <h2>Google form</h2>
+    </div>
+
+    </div>
+    </form><br>
+    <footer>   
+        <div class="copyright">
+            &copy;2004 -2025 Sema portfolio | All Rights reserved | <span>Privacy Policy</span> | <span>Terms of Services </span> 
+        </div>
+        
+    </footer>
+    
+    <script>
+         
+         var slider=document.getElementById("myrange");
+         var output=document.getElementById("value");
+
+         output.innerHTML=slider.value;
+         slider.oninput=function(){
+            output.innerHTML=this.value;
+         }
+    </script>
+
+    
+</body>
+</html>

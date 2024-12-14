@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    min-width: 140rem;
+   thead{
+    th{
+        background: yellowgreen;
+        font-weight: 900;
+      
+    }
+   
+   }
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(green,yellow);
+}
+th,td{
+    padding: 15px ;
+}
+/* tbody td:nth-child(even){
+    background: red;
+} */
